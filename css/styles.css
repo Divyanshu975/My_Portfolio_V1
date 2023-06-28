@@ -529,5 +529,41 @@ img{
 }
 
 .portfolio_button:hover .button_icon{
-    transform: translateX(1rem);
+    transform: translateX(.25rem);
+}
+
+/* .swiper-button-prev::after,
+.swiper-button-next::after{
+    content:'' !important;
+} */
+/*-------------------------Increasing selector specifity by using id to override style in default sheet -----------------*/
+#next-button::after,
+#prev-button::after{
+    content:'';
+}
+.swiper-portfolio-icon{
+    font-size: 2rem;;
+    color:var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+.swiper-button-next{
+    right: -.5rem;
+}
+
+/*------------------Project In Mind--------------------------------*/
+.project{
+    text-align:center;
+}
+
+.projct_bg{
+    background-color: var(--first-color-second);
+    padding-top:3rem;
+}
+
+.project_title{
+    font-size: var(--h2-font-size);
 }

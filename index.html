@@ -2,12 +2,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href=""><!--SWIPER CSS-->
+        <link rel="stylesheet" href="css/swipercss-bundle.css"><!--SWIPER CSS-->
         <link rel="stylesheet" href="css/styles.css"><!--CSS-->
 
         <!--UNICONS-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.css"> 
         <title>Responsive Portfolio Website</title>
     </head>
     <body>
@@ -103,13 +103,13 @@
                     </div>
                 </div>
             </section>
-
+            <!--ABOUT-->
             <section class="about section" id="about">
                 <h2 class="section_title">About Me</h2>
                 <span class="section_subtitle">My Introduction</span>
 
                 <div class="about_container container grid">
-                    <img src="img/about.jpg" alt="" class="about_img">
+                    <img src="img/portfolio-home-img.jpg" alt="" class="about_img">
                 </div>
                 <div class="about_data">
                     <p class="about_description">Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet</p>
@@ -304,10 +304,10 @@
             <section class="portfolio" id="portfolio">
                 <h2 class="section_title">Portfolio</h2>
                 <span class="section_subtitle">Most Recent Work</span>
-                <div class="portfolio-container container">
-                    <div>
+                <div class="portfolio_container container swiper mySwiper">
+                    <div class="swiper-wrapper">
                         <!--============ PORTFOLIO 1 ===============-->
-                        <div class="portfolio_content grid">
+                        <div class="portfolio_content grid swiper-slide">
                             <img src="" alt="image of react keeper app">
 
                             <div class="portfolio_data">
@@ -319,7 +319,7 @@
                             </div>
                         </div>
                         <!--============ PORTFOLIO 2 ===============-->
-                        <div class="portfolio_content grid">
+                        <div class="portfolio_content grid swiper-slide">
                             <img src="" alt="image of react keeper app">
 
                             <div class="portfolio_data">
@@ -331,7 +331,7 @@
                             </div>
                         </div>
                         <!--============ PORTFOLIO 3 ===============-->
-                        <div class="portfolio_content grid">
+                        <div class="portfolio_content grid swiper-slide">
                             <img src="" alt="image of react keeper app">
 
                             <div class="portfolio_data">
@@ -343,7 +343,7 @@
                             </div>
                         </div>
                         <!--============ PORTFOLIO 4 ===============-->
-                        <div class="portfolio_content grid">
+                        <div class="portfolio_content grid swiper-slide">
                             <img src="" alt="image of react keeper app">
 
                             <div class="portfolio_data">
@@ -355,13 +355,35 @@
                             </div>
                         </div>
                     </div>
+                    <!--ADD ARROWS-->
+                    <div class="swiper-button-next" id="next-button"><i class="uil uil-angle-right swiper-portfolio-icon"></i></div>
+                    <div class="swiper-button-prev" id="prev-button"><i class="uil uil-angle-left swiper-portfolio-icon"></i></div>
+                    <!--ADD PAGINATION-->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!-------------PROJECT IN MIND------------->
+            <section class="project section"> 
+                <div class="project_bg">
+                    <div class="project_container container grid">
+                        <div class="project_data">
+                            <h2 class="project_title">You have a new project</h2>
+                            <p class="project_description">Contact me now</p>
+                            <a href="#contact" class="button button-flex button-white">
+                                Contact Me
+                                <i class="uil uil-message project_icon"></i>
+                            </a>
+                        </div>
+                        <img src="" alt="image" class="project_img">
+                    </div>
                 </div>
             </section>
         </main>
         
 
         <!--swiper js-->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.js"></script>
+        <script src="js/swiperjs-bundle.js"></script>
 
         <!--Main JS-->
         <script src="js/main.js"></script>
